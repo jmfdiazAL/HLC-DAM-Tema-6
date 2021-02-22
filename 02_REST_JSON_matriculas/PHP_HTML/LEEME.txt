@@ -1,0 +1,33 @@
+﻿
+En Servidor web local:
+*************************
+los scripts de php se van a situar en la carpeta CRUD dentro del directorio de trabajo del servidor, que en Linux está en /var/www/html
+En Windows (Wampserver) C:\wamp\www\rest_con_json
+
+hay que darle los permisos 755 a los archivos de la carpeta rest_con_json(Linux)
+
+Debes cambiar los datos de acceso de los scripts PHP: (por ejemplo los míos son)
+
+define('HOST','localhost');
+	define('USER','root');
+	define('PASS','');
+	define('DB','alumnos');
+
+
+En Servidor 000webhost
+*************************************
+los scripts de php se van a situar en la carpeta rest_con_json dentro del directorio de trabajo del servidor, 
+normalmente debe ser en la misma carpeta donde esté alojada la página web, 
+por ejemplo en 000webhost será en: /public_html/rest_con_json
+
+Aunque no siempre es necesario, hay que darle los permisos 755 a los archivos de la carpeta CRUD => 
+a los archivos PHP y HTML
+
+Debes cambiar los datos de acceso de los scripts PHP: (por ejemplo los míos son)
+	define('HOST','localhost');
+	define('USER','id5529146_isa');
+	define('PASS','123456');
+	define('DB','id5529146_alum');
+
+
+por los que has indicado en tu Hosting particular. 
